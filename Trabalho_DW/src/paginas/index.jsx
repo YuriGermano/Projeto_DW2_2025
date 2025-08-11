@@ -1,5 +1,7 @@
 import Footer from '../componentes/footer.jsx'
 import '../style/index.css'
+import { Link } from "react-router-dom";
+import carro_info from '../componentes/carros_info.jsx';
 
 
 export default function Main() {
@@ -34,26 +36,30 @@ export default function Main() {
             </section>
 
 
-
+            {carro_info.map((carros) => {
             <section className="carros">
                 <div className="grid_container" id='carros'>
-                    <a href="paginas/veiculo_1.html"><div className="carro">
-                        <div className="text">
-                            <h1>FERRARI 458 ITALIA SPIDER</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>FERRARI 458 ITALIA SPIDER</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (1).png" />
                         </div>
-                        <img src="/imagens/image (1).png" />
-                    </div></a>
+                    </Link>
 
-                    <a href="paginas/veiculo_2.html"><div className="carro">
-                        <div className="text">
-                            <h1>LAMBORGHINI AVENTADOR SVJ</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>LAMBORGHINI AVENTADOR SVJ</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (4).png" />
                         </div>
-                        <img src="/imagens/image (4).png" />
-                    </div></a>
+                    </Link>
 
                     <a href="paginas/veiculo_3.html"><div className="carro">
                         <div className="text">
@@ -118,7 +124,7 @@ export default function Main() {
                         <img src="/imagens/image (7).jpg" alt=""/>
                     </div></a>
                 </div>
-            </section>
+            </section>})};
 
 
             

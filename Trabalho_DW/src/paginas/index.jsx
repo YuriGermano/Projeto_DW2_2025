@@ -36,11 +36,11 @@ export default function Main() {
             </section>
 
 
-            {carro_info.map((carros) => {
+            {carro_info.map((carros) => {      {/*  Percorre o array dos carros, mapeando eles, percorre e renderiza cada item da lista*/}
             <section className="carros">
                 <div className="grid_container" id='carros'>
-                    <Link to={`/carro/${carros.id}`}>
-                        <div key={carros.id} className="carro">
+                    <Link to={`/carro/${carros.id}`}>        {/* Cria o Link personalizado para cada carro */}
+                        <div key={carros.id} className="carro">         {/*Key identifica cada item*/}
                             <div className="text">
                                 <h1>FERRARI 458 ITALIA SPIDER</h1>
                                 <p>Taxa Diária: R$ 1000.00</p>
@@ -61,69 +61,84 @@ export default function Main() {
                         </div>
                     </Link>
 
-                    <a href="paginas/veiculo_3.html"><div className="carro">
-                        <div className="text">
-                            <h1>MCLAREN 720s</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro"> 
+                            <div className="text">
+                                <h1>MCLAREN 720s</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (8).jpeg" />
                         </div>
-                        <img src="/imagens/image (8).jpeg" />
-                    </div></a>
+                    </Link>
 
-                    <a href="paginas/veiculo_4.html"><div className="carro">
-                        <div className="text">
-                            <h1>CADILLAC ESCALADE</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>CADILLAC ESCALADE</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (3).jpg" />
                         </div>
-                        <img src="/imagens/image (3).jpg" />
-                    </div></a>
+                    </Link>
 
-                    <a href="paginas/veiculo_5.html"><div className="carro">
-                        <div className="text">
-                            <h1>DOGDE RAM 3500</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>DOGDE RAM 3500</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (2).jpeg" />
                         </div>
-                        <img src="/imagens/image (2).jpeg" />
-                    </div></a>
+                    </Link>
 
-                    <a href="paginas/veiculo_6.html"><div className="carro">
+                    <Link to={`/carro/${carros.id}`}>
+                    <div key={carros.id} className="carro">
                         <div className="text">
                             <h1>Mercedes-AMG GT 63</h1>
                             <p>Taxa Diária: R$ 1000.00</p>
                             <p>Preço Especial: R$ 800.00</p>
                         </div>
                         <img src="/imagens/image (5).png" />
-                    </div></a>
+                    </div>
+                    </Link>
 
-                    <a href="paginas/veiculo_7.html"><div className="carro">
-                        <div className="text">
-                            <h1>RANGER ROVER SPORT</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>RANGER ROVER SPORT</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (10).jpg"/>
                         </div>
-                        <img src="/imagens/image (10).jpg"/>
-                    </div></a>
+                    </Link>
 
-                    <a href="paginas/veiculo_8.html"><div className="carro">
-                        <div className="text">
-                            <h1>PORSCHE 911 GT3 RS</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>PORSCHE 911 GT3 RS</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (9).jpg"/>
                         </div>
-                        <img src="/imagens/image (9).jpg"/>
-                    </div></a>
+                    </Link>
 
-                    <a href="paginas/veiculo_9.html"><div className="carro">
-                        <div className="text">
-                            <h1>BMW X7</h1>
-                            <p>Taxa Diária: R$ 1000.00</p>
-                            <p>Preço Especial: R$ 800.00</p>
+                    <Link to={`/carro/${carros.id}`}>
+                        <div key={carros.id} className="carro">
+                            <div className="text">
+                                <h1>BMW X7</h1>
+                                <p>Taxa Diária: R$ 1000.00</p>
+                                <p>Preço Especial: R$ 800.00</p>
+                            </div>
+                            <img src="/imagens/image (7).jpg" alt=""/>
                         </div>
-                        <img src="/imagens/image (7).jpg" alt=""/>
-                    </div></a>
+                    </Link>
                 </div>
+                
             </section>})};
 
 

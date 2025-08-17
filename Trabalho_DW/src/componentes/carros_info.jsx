@@ -10,6 +10,7 @@ const carros = [
     tracao: "RWD",
     preco: "$875 (R$ 4.375)",
     imagem: [
+        "/imagens/Ferrari_0.png",
         "/imagens/Ferrari_1.png",
         "/imagens/Ferrari_2.png",
         "/imagens/Ferrari_3.png"
@@ -24,7 +25,12 @@ const carros = [
     aceleracao: "2,8–2,9 segundos",
     tracao: "AWD",
     preco: "$2.098 (R$ 10.490)",
-    imagem: "/imagens/Lambo_1.png"
+    imagem: [
+        "/imagens/Lambo_0.png",
+        "/imagens/Lambo_1.png",
+        "/imagens/Lambo_2.png",
+        "/imagens/Lambo_3.png"
+      ]
   },
   {
     id: 3,
@@ -35,7 +41,12 @@ const carros = [
     aceleracao: "4,5–5,4 segundos",
     tracao: "RWD / AWD",
     preco: "$425 (R$ 2.125)",
-    imagem: "/imagens/mercedes-s550.jpg"
+    imagem: [
+        "/imagens/Mer_0.png",
+        "/imagens/Mer_1.png",
+        "/imagens/Mer_2.png",
+        "/imagens/Mer_3.png"
+    ]
   },
   {
     id: 4,
@@ -46,7 +57,12 @@ const carros = [
     aceleracao: "5,8 segundos",
     tracao: "AWD (xDrive)",
     preco: "$370 (R$ 1.850)",
-    imagem: "/imagens/bmw-x7.jpg"
+    imagem: [
+        "/imagens/Bmw_0.jpg",
+        "/imagens/Bmw_1.png",
+        "/imagens/Bmw_2.png",
+        "/imagens/Bmw_3.png"
+    ]
   },
   {
     id: 5,
@@ -57,7 +73,12 @@ const carros = [
     aceleracao: "3,2 segundos",
     tracao: "RWD",
     preco: "$1.179 (R$ 5.900)",
-    imagem: "/imagens/porsche-911.jpg"
+    imagem: [
+        "/imagens/Pors_0.jpg",
+        "/imagens/Pors_1.png",
+        "/imagens/Pors_2.png",
+        "/imagens/Pors_3.png"
+    ]
   },
   {
     id: 6,
@@ -68,7 +89,12 @@ const carros = [
     aceleracao: "3,9 segundos",
     tracao: "AWD",
     preco: "$349 (R$ 1.745)",
-    imagem: "/imagens/range-rover-sv.jpg"
+    imagem: [
+        "/imagens/Land_0.jpg",
+        "/imagens/Land_1.png",
+        "/imagens/Land_2.png",  
+        "/imagens/Land_3.png"
+    ]
   },
   {
     id: 7,
@@ -79,7 +105,12 @@ const carros = [
     aceleracao: "8–8,8 segundos",
     tracao: "RWD / 4WD",
     preco: "R$ 1.500",
-    imagem: "/imagens/dodge-ram.jpg"
+    imagem: [
+        "/imagens/Ram_0.jpeg",
+        "/imagens/Ram_1.png",
+        "/imagens/Ram_2.png",
+        "/imagens/Ram_3.png"
+    ]
   },
   {
     id: 8,
@@ -90,7 +121,12 @@ const carros = [
     aceleracao: "2,8 segundos",
     tracao: "RWD",
     preco: "Preço sob consulta",
-    imagem: "/imagens/mclaren-senna.jpg"
+    imagem: [
+        "/imagens/Mc_0.jpeg",
+        "/imagens/Mc_1.png",
+        "/imagens/Mc_2.png",
+        "/imagens/Mc_3.png"
+    ]
   },
   {
     id: 9,
@@ -101,7 +137,12 @@ const carros = [
     aceleracao: "4,4 segundos",
     tracao: "AWD",
     preco: "$275 (R$ 1.375)",
-    imagem: "/imagens/cadillac-escalade.jpg"
+    imagem: [
+        "/imagens/Cad_0.jpg",
+        "/imagens/Cad_1.png",
+        "/imagens/Cad_2.png",
+        "/imagens/Cad_3.png"
+    ]
   }
 ];
 

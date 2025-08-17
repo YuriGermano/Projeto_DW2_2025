@@ -38,7 +38,8 @@ export default function Main() {
       </section>
 
       {/* Lista de carros */}
-      {carro_info.map((carro) => (
+      {/* carro_info é uma array e serve para armazenar as informações dos carros */}
+      {carro_info.map((carro) => (        
         <section className="carros" key={carro.id} id="carros">   {/*  key={carro.id} → identifica unicamente cada item do .map() */}
           <div className="grid_container">
             <Link to={`/carro/${carro.id}`}>
@@ -47,7 +48,7 @@ export default function Main() {
                   <h1>{carro.nome}</h1>
                   <p>Preço: {carro.preco}</p>
                 </div>
-                <img src={carro.imagem} alt={carro.nome} />
+                <img src={carro.imagem[0]} alt={carro.nome} />
               </div>
             </Link>
           </div>

@@ -1,9 +1,11 @@
 import '../style/Footer.css'
 
-export default function Footer(){
-   return(
+export default function Footer() {
+    return (
         <footer>
-            <hr/>
+            <div class="hrlinha">
+                <hr />
+            </div>
             <div id="div_principal">
                 <div class="escrita">
                     <p><strong>CHAVE</strong> NA MÃO</p>
@@ -17,22 +19,21 @@ export default function Footer(){
                     <p>LAURA LEANDRA FACCIN</p>
                     <p>BIANCA GABRIELA GOLFE</p>
                 </div>
-        
+
                 <div id="seguir">
                     <p id="siga">Siga-nos</p>
                     <div class="redes">
-                        <img src="/imagens/instagram.png" alt=""/>
-                        <img src="/imagens/facebook.png" alt=""/>
-                        <img src="/imagens/whatsapp.png" alt=""/>
-                        <img src="/imagens/localizacao.png" alt=""/>
+                        <img src="/imagens/instagram.png" alt="" />
+                        <img src="/imagens/facebook.png" alt="" />
+                        <img src="/imagens/whatsapp.png" alt="" />
+                        <img src="/imagens/localizacao.png" alt="" />
                     </div>
                 </div>
-                
+
                 <div id="imagem">
-                    <img src="/imagens/logo.png" alt=""/>
+                    <img src="/imagens/logo.png" alt="" />
                 </div>
             </div>
-            <hr/>
         </footer>
-        )
-    }
+    )
+}

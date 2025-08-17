@@ -4,34 +4,94 @@ import "../style/Carro.css";
 import Footer from "../componentes/footer.jsx";
 
 export default function Carros() {
-  const { id } = useParams(); // Pega o id da URL
-  const carro = carro_info.find((carro) => carro.id === parseInt(id)); // Encontra o carro com o id correspondente e transforma o id em número
+  const { id } = useParams();
+  const carro = carro_info.find((carro) => carro.id === parseInt(id));
 
   if (!carro) {
     return <h1>Carro não encontrado</h1>
   }
-  return(
-    <div>
-      <section id="detalhes_carro">
-          <h1>{carro.nome}</h1>
-          <p>Potência: {carro.potencia}</p>
-          <p>Transmissão: {carro.transmissao}</p>
-          <p>Motor: {carro.motor}</p>
-          <p>Aceleração: {carro.aceleracao}</p>
-          <p>Tração: {carro.tracao}</p>
-          <p>Preço: {carro.preco}</p>
-          <img src={carro.imagem[1]} alt={carro.nome} />,
-          <img src={carro.imagem[2]} alt={carro.nome} />,
-          <img src={carro.imagem[3]} alt={carro.nome} />
-        </section>
-    
 
+  return (
+    <div id="pagina_detalhe">
+      {/* Container principal */}
+      <div className="carro-container">
+        
+        {/* Lado esquerdo - Imagem do carro */}
+        <div className="carro-imagem">
+          <img src={carro.imagem[0]} alt={carro.nome} />
+        </div>
 
+        {/* Lado direito - Configurações */}
+        <div className="carro-config">
+          <h2>{carro.nome}</h2>
+          <p>Etapa 1 de 4</p>
+          <h3>Configuração de Motor</h3>
+
+          <div className="opcao">
+            <input type="radio" name="motor" defaultChecked /> 
+            <div>
+              <p><b>Opção 1</b></p>
+              <p>R$ 100,00</p>
+              <p>5,9 s — Aceleração 0-100 km/h</p>
+              <p>400 CV — Potência Máx</p>
+            </div>
+          </div>
+
+          <div className="opcao">
+            <input type="radio" name="motor" />
+            <div>
+              <p><b>Opção 2</b></p>
+              <p>R$ 150,00</p>
+              <p>4,5 s — Aceleração 0-100 km/h</p>
+              <p>440 CV — Potência Máx</p>
+            </div>
+          </div>
+
+          <div className="finalizacao">
+            <p>Preço Total: R$ 900,00</p>
+            <button>Finalizar</button>
+          </div>
+        </div>
+      </div>    
 
       <footer>
         <Footer />
       </footer>
     </div>
-  )
-
+  );
 }
+
+
+
+//export default function Carros() {
+  //const { id } = useParams(); // Pega o id da URL
+  //const carro = carro_info.find((carro) => carro.id === parseInt(id)); // Encontra o carro com o id correspondente e transforma o id em número
+
+//  if (!carro) {
+  //  return <h1>Carro não encontrado</h1>
+ // }
+  //return(
+    //<div>
+      //<section id="detalhes_carro">
+        //  <h1>{carro.nome}</h1>
+         // <p>Potência: {carro.potencia}</p>
+         // <p>Transmissão: {carro.transmissao}</p>
+         // <p>Motor: {carro.motor}</p>
+         // <p>Aceleração: {carro.aceleracao}</p>
+         // <p>Tração: {carro.tracao}</p>
+         // <p>Preço: {carro.preco}</p>
+         // <img src={carro.imagem[1]} alt={carro.nome} />,
+         // <img src={carro.imagem[2]} alt={carro.nome} />,
+         // <img src={carro.imagem[3]} alt={carro.nome} />
+       // </section>
+    
+
+
+
+     // <footer>
+      //  <Footer />
+     // </footer>
+   // </div>
+ // )
+
+//}

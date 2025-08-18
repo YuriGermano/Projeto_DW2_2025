@@ -4,7 +4,7 @@ import carro_info from "../componentes/carros_info.jsx";
 import { mudarImagem, calcularPreco } from "../componentes/carroLogica.js";
 import "../style/Carro.css";
 import Footer from "../componentes/footer.jsx";
-import Header from "../componentes/Header.jsx";
+import Header_carros from "../componentes/Header_carros.jsx";
 
 export default function Carros() {
   const { id } = useParams();
@@ -19,7 +19,7 @@ export default function Carros() {
 
   return (
     <div id="pagina_detalhe">
-      <Header />
+      <Header_carros />
 
       <div className="carro-container">
         <div className="carro-imagem">

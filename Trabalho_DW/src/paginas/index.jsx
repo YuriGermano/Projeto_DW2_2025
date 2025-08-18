@@ -8,30 +8,36 @@ export default function Main() {
   return (
     <div id='div_mae'>
       {/* Seção inicial */}
-      <section 
+      <section
         id="pagina_inicial"
         style={{
           backgroundImage: "url('/imagens/imgfundo.png')",
           backgroundSize: "cover",
           width: "1530px",
-          marginLeft: "-10%", 
+          marginLeft: "-10%",
           marginTop: "-32px",
+          position: "relative", 
         }}
       >
-        <div id="quadrado_inicial"></div>
         <Header />
-        <div id="frase_inicial">
-          <p>Seu <strong>Destino</strong> <br />Começa<br /> Com a <strong>Chave</strong><br /> Certa</p>
+
+        <div className="frase_box">
+          <p>
+            Seu <strong>Destino</strong> <br />
+            Começa <br />
+            Com a <strong>Chave</strong> <br />
+            Certa
+          </p>
         </div>
-        <div id="retangulo_inicial"></div>
       </section>
 
-        
-{ /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
+
+
+      { /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
 
       {/* Lista de carros */}
       {/* carro_info é uma array e serve para armazenar as informações dos carros */}
-      {carro_info.map((carro) => (        
+      {carro_info.map((carro) => (
         <section className="carros" key={carro.id} id="carros">   {/*  key={carro.id} → identifica unicamente cada item do .map() */}
           <div className="grid_container">
             <Link to={`/carro/${carro.id}`}>
@@ -47,7 +53,7 @@ export default function Main() {
         </section>
       ))}
 
-{ /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
+      { /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
 
       {/* Footer */}
       <Footer />

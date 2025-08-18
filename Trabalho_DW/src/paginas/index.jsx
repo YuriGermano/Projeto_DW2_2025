@@ -7,42 +7,51 @@ export default function Main() {
   return (
     <div id='div_mae'>
       {/* Seção inicial */}
-      <section 
+      <section
         id="pagina_inicial"
         style={{
           backgroundImage: "url('/imagens/imgfundo.png')",
-          backgroundSize: "cover",
-          width: "1530px",
-          marginLeft: "-10%", 
-          marginTop: "-32px",
+          backgroundSize: "contain", /* mostra a imagem inteira */
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "100vh", /* ocupa a tela inteira */
+          width: "100%",
         }}
       >
-        <div id="quadrado_inicial"></div>
-        <header>
-          <nav className="navbar">
-            <div className="logo">
-              <img src="/imagens/logo.png" alt="logo_site" />
-            </div>
-            <div className="escritas_header">
-              <p>Home</p>
-              <a href="#carros"><p>Carros</p></a>
-              <p>Sobre Nós</p>
-              <p>Contato</p>
-            </div>
-          </nav>
-        </header>
-        <div id="frase_inicial">
-          <p>Seu <strong>Destino</strong> <br />Começa<br /> Com a <strong>Chave</strong><br /> Certa</p>
-        </div>
-        <div id="retangulo_inicial"></div>
-      </section>
+          <header>
+            <nav class="navbar">
+              <div class="logo">
+                <img src="/imagens/logo.png" alt="logo_site" />
+              </div>
+              <div class="escritas_header">
+                <a href="#"><p>Home</p></a>
+                <a href="#carros"><p>Carros</p></a>
+                <a href="#"><p>Sobre Nós</p></a>
+                <a href="#"><p>Contato</p></a>
+              </div>
+            </nav>
 
-        
-{ /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
+            <div id="frase_inicial">
+              <p>
+                SEU <strong>DESTINO</strong><br />
+                COMEÇA<br />
+                COM A <strong>CHAVE</strong><br />
+                CERTA
+              </p>
+            </div>
+
+            <div id="retangulo_inicial"></div>
+          </header>
+        </section>
+
+
+
+
+      { /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
 
       {/* Lista de carros */}
       {/* carro_info é uma array e serve para armazenar as informações dos carros */}
-      {carro_info.map((carro) => (        
+      {carro_info.map((carro) => (
         <section className="carros" key={carro.id} id="carros">   {/*  key={carro.id} → identifica unicamente cada item do .map() */}
           <div className="grid_container">
             <Link to={`/carro/${carro.id}`}>
@@ -58,7 +67,7 @@ export default function Main() {
         </section>
       ))}
 
-{ /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
+      { /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
 
       {/* Footer */}
       <footer>

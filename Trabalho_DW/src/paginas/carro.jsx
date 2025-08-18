@@ -1,5 +1,7 @@
-import carro_info from "../componentes/carros_info.jsx";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
+import carro_info from "../componentes/carros_info.jsx";
+import { mudarImagem, calcularPreco } from "../componentes/carroLogica.js";
 import "../style/Carro.css";
 import Footer from "../componentes/footer.jsx";
 import Header from "../componentes/Header.jsx";
@@ -7,53 +9,69 @@ import Header from "../componentes/Header.jsx";
 export default function Carros() {
   const { id } = useParams();
   const carro = carro_info.find((carro) => carro.id === parseInt(id));
-   
+
+  const [imgIndex, setImgIndex] = useState(0); 
+  const [opcao, setOpcao] = useState(0); 
+
   if (!carro) {
-    return <h1>Carro não encontrado</h1>
+    return <h1>Carro não encontrado</h1>;
   }
 
   return (
     <div id="pagina_detalhe">
       <Header />
-      {/* Container principal */}
+
       <div className="carro-container">
-        
-        {/* Lado esquerdo - Imagem do carro */}
         <div className="carro-imagem">
-          <img src={carro.imagem[0]} alt={carro.nome} />
+          <button className="seta" onClick={() => setImgIndex(mudarImagem("prev", imgIndex, carro.imagem.length))}>❮</button>
+          <img src={carro.imagem[imgIndex]} alt={carro.nome} />
+          <button className="seta" onClick={() => setImgIndex(mudarImagem("next", imgIndex, carro.imagem.length))}>❯</button>
         </div>
 
-        {/* Lado direito - Configurações */}
         <div className="carro-config">
           <h2>{carro.nome}</h2>
-          <h3>Configuração de Motor</h3>
+          <h3>Etapa 1 de 4</h3>
+          <h3>Configuração de Motor</h3>  
 
-          <div className="opcao">
-            <input type="radio" name="motor" defaultChecked /> 
-            <div>
-              <p><b>Opção 1</b></p>
-              <p>{carro.preco[0]}</p>
-              <p>0-100Km/H em {carro.aceleracao[0]}</p>
-              <p>{carro.potencia[0]}</p>
-            </div>
-          </div>
+          {carro.preco.map((preco, i) => (
+            <label 
+              className={`opcao ${opcao === i ? "selecionada" : ""}`} 
+              key={i}
+              onClick={() => setOpcao(i)}
+            >
+              <input
+                type="radio"
+                name="motor"
+                checked={opcao === i}
+                onChange={() => setOpcao(i)}
+              />
 
-          <div className="opcao">
-            <input type="radio" name="motor" />
-            <div>
-              <p><b>Opção 2</b></p>
-              <p>{carro.preco[1]}</p>
-              <p>0-100Km/H em {carro.aceleracao[1]}</p>
-              <p>{carro.potencia[1]}</p>
-            </div>
-          </div>
+              <div className="opcao-header">
+                <span className="radio-falso"></span>
+                <p className="opcao-titulo">Opção {i + 1}</p>
+              </div>
 
+              <div className="opcao-info">
+                <p className="opcao-preco">{preco}</p>
+                <p className="opcao-acel">{carro.aceleracao[i]} (0–100 Km/h)</p>
+                <p className="opcao-pot">{carro.potencia[i]}</p>
+              </div>
+            </label>
+          ))}
+
+
+        </div>
+      </div>
+
+      <div className="carro-info-bottom">
+        <h2>{carro.nome}</h2>
+        <p>Preço Total: {calcularPreco(carro, opcao)}</p>
+        
           <div className="finalizacao">
-            <p>Preço Total: {carro.preco[1]}</p>
             <button>Finalizar</button>
           </div>
-        </div>
-      </div>    
+    
+      </div>
 
       <footer>
         <Footer />

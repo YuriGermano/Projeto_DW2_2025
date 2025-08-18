@@ -28,12 +28,11 @@ export default function Footer(){
                     </div>
                 </div>
                 
-                
-                
                 <div id="imagem">
                     <img src="/imagens/logo.png" alt=""/>
                 </div>
             </div>
+            <hr/>
         </footer>
         )
     }

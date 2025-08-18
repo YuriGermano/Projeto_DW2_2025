@@ -9,6 +9,7 @@ body{
     background-color: #2e2e2e;
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
+    margin-right: -13%;
 }
 
 /* Yuri */
@@ -19,26 +20,41 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100%;
     margin: 0px;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4); /* fundo semitransparente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 10;
 }
 
 .logo img{
-    width: 200px;
-    height: 200px;
-    margin: -55px 0px 0px 5px;
+    width:150px;
+    height: auto;
+/* margin: -55px 0px 0px 5px; */
+    margin: 0;
 }
 
 .escritas_header{
     color: white;
     display: flex;
+    gap: 40px;
+    margin: 0;
     z-index: 1;
-    position: absolute;
-    top: 3%;
+    position: relative;
+    top: 0;
     right: 0;
     justify-content: flex-start;
     /* margin: 40px 40px 0px 0px; */
@@ -47,7 +63,18 @@ body{
     margin-top:-0.5%;
 }
 
+#retangulo_inicial{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100px;
+    background-color: rgb(255, 255, 255, 0.15);
+    z-index: 0;
+}
+
 .escritas_header p{
+    margin: 0;
     border: 0px;
     margin-right: 9px;
     font-size: 20px;
@@ -77,16 +104,6 @@ a:hover{
     font-size: 63px;
     text-align: justify;
     margin-right: 3%;
-}
-
-#retangulo_inicial{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 870px;
-    height: 100vh;
-    background-color: rgb(255, 255, 255, 0.15);
-    z-index: 0;
 }
 
 
@@ -258,7 +275,7 @@ footer {
 footer{
     width: 100%;
     margin-top: 16px;
-    margin-left: -80px;
+    margin-left: -120px;
 }
 
 #div_mae {

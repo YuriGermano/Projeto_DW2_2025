@@ -10,7 +10,6 @@ export default function Carros() {
   if (!carro) {
     return <h1>Carro não encontrado</h1>
   }
-
   return(
     <div>
       <section id="detalhes_carro">
@@ -25,8 +24,9 @@ export default function Carros() {
           <img src={carro.imagem[2]} alt={carro.nome} />,
           <img src={carro.imagem[3]} alt={carro.nome} />
         </section>
+    
 
-  
+
 
       <footer>
         <Footer />

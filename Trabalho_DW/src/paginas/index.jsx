@@ -37,6 +37,9 @@ export default function Main() {
         <div id="retangulo_inicial"></div>
       </section>
 
+        
+{ /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
+
       {/* Lista de carros */}
       {/* carro_info é uma array e serve para armazenar as informações dos carros */}
       {carro_info.map((carro) => (        
@@ -54,6 +57,8 @@ export default function Main() {
           </div>
         </section>
       ))}
+
+{ /* lembrete para Filipe, Laura e Bianca: NÃO MEXER NISSO AQUI */}
 
       {/* Footer */}
       <footer>

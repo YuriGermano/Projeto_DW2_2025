@@ -2,6 +2,7 @@ import Footer from '../componentes/footer.jsx';
 import '../style/index.css';
 import { Link } from "react-router-dom";
 import carro_info from '../componentes/carros_info.jsx';
+import Header from '../componentes/Header.jsx';
 
 export default function Main() {
   return (
@@ -18,19 +19,7 @@ export default function Main() {
         }}
       >
         <div id="quadrado_inicial"></div>
-        <header>
-          <nav className="navbar">
-            <div className="logo">
-              <img src="/imagens/logo.png" alt="logo_site" />
-            </div>
-            <div className="escritas_header">
-              <p>Home</p>
-              <a href="#carros"><p>Carros</p></a>
-              <p>Sobre Nós</p>
-              <p>Contato</p>
-            </div>
-          </nav>
-        </header>
+        <Header />
         <div id="frase_inicial">
           <p>Seu <strong>Destino</strong> <br />Começa<br /> Com a <strong>Chave</strong><br /> Certa</p>
         </div>

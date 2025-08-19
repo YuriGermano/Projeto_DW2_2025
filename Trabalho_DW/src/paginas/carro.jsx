@@ -2,6 +2,7 @@ import carro_info from "../componentes/carros_info.jsx";
 import { useParams } from "react-router-dom";
 import "../style/Carro.css";
 import Footer from "../componentes/footer.jsx";
+import Header from "../componentes/Header.jsx";
 
 export default function Carros() {
   const { id } = useParams();
@@ -13,6 +14,7 @@ export default function Carros() {
 
   return (
     <div id="pagina_detalhe">
+      <Header />
       {/* Container principal */}
       <div className="carro-container">
         

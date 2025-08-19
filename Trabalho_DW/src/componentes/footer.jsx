@@ -3,10 +3,6 @@ import '../style/Footer.css'
 export default function Footer() {
     return (
         <footer>
-            <div class="hrlinha">
-                <hr />
-            </div>
-            <div id="div_principal">
                 <div class="escrita">
                     <p><strong>CHAVE</strong> NA MÃO</p>
                     <p>ESTRADA NO <strong>CORAÇÃO</strong></p>
@@ -33,7 +29,6 @@ export default function Footer() {
                 <div id="imagem">
                     <img src="/imagens/logo.png" alt="" />
                 </div>
-            </div>
         </footer>
     )
-}
+}   

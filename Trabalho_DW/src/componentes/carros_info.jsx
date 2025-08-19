@@ -3,145 +3,145 @@ const carros = [
   {
     id: 1,
     nome: "Ferrari 458 Spider",
-    potencia: "570 CV @ 9.000 rpm",
+    potencia: ["570 CV @ 9.000 rpm", "610 CV @ 9.000 rpm"],
     transmissao: "F1 Dual-clutch transmission, 7 velocidades",
     motor: "4.497 cm³, V8 90°, injeção direta, cárter seco",
-    aceleracao: "< 3,4 segundos",
+    aceleracao: ["< 3,4 segundos", "< 3,2 segundos"],
     tracao: "RWD",
-    preco: "$875 (R$ 4.375)",
+    preco: ["$875 (R$ 4.375)", "$950 (R$ 4.750)"],
     imagem: [
-        "/imagens/Ferrari_0.png",
-        "/imagens/Ferrari_1.png",
-        "/imagens/Ferrari_2.png",
-        "/imagens/Ferrari_3.png"
+      "/imagens/Ferrari_0.png",
+      "/imagens/Ferrari_1.png",
+      "/imagens/Ferrari_2.png",
+      "/imagens/Ferrari_3.png"
     ]
   },
   {
     id: 2,
     nome: "Lamborghini Aventador SVJ",
-    potencia: "770 CV @ 8.500 rpm",
+    potencia: ["770 CV @ 8.500 rpm", "800 CV @ 8.500 rpm"],
     transmissao: "Automático, 7 marchas",
     motor: "6,5 L V12 aspirado",
-    aceleracao: "2,8–2,9 segundos",
+    aceleracao: ["2,8–2,9 segundos", "2,6–2,7 segundos"],
     tracao: "AWD",
-    preco: "$2.098 (R$ 10.490)",
+    preco: ["$2.098 (R$ 10.490)", "$2.250 (R$ 11.250)"],
     imagem: [
-        "/imagens/Lambo_0.png",
-        "/imagens/Lambo_1.png",
-        "/imagens/Lambo_2.png",
-        "/imagens/Lambo_3.png"
-      ]
+      "/imagens/Lambo_0.png",
+      "/imagens/Lambo_1.png",
+      "/imagens/Lambo_2.png",
+      "/imagens/Lambo_3.png"
+    ]
   },
   {
     id: 3,
     nome: "Mercedes-Benz S550",
-    potencia: "~449 CV",
+    potencia: ["~449 CV", "500 CV"],
     transmissao: "Automática, 7 marchas",
     motor: "V8 biturbo ou aspirado (4,7 L ou 4,0 L)",
-    aceleracao: "4,5–5,4 segundos",
+    aceleracao: ["4,5–5,4 segundos", "4,2–5,0 segundos"],
     tracao: "RWD / AWD",
-    preco: "$425 (R$ 2.125)",
+    preco: ["$425 (R$ 2.125)", "$480 (R$ 2.400)"],
     imagem: [
-        "/imagens/Mer_0.png",
-        "/imagens/Mer_1.png",
-        "/imagens/Mer_2.png",
-        "/imagens/Mer_3.png"
+      "/imagens/Mer_0.png",
+      "/imagens/Mer_1.png",
+      "/imagens/Mer_2.png",
+      "/imagens/Mer_3.png"
     ]
   },
   {
     id: 4,
     nome: "BMW X7",
-    potencia: "381 CV",
+    potencia: ["381 CV", "420 CV"],
     transmissao: "Automática, 8 velocidades TwinPower Turbo",
     motor: "6 cilindros em linha, TwinPower Turbo",
-    aceleracao: "5,8 segundos",
+    aceleracao: ["5,8 segundos", "5,5 segundos"],
     tracao: "AWD (xDrive)",
-    preco: "$370 (R$ 1.850)",
+    preco: ["$370 (R$ 1.850)", "$400 (R$ 2.000)"],
     imagem: [
-        "/imagens/Bmw_0.jpg",
-        "/imagens/Bmw_1.png",
-        "/imagens/Bmw_2.png",
-        "/imagens/Bmw_3.png"
+      "/imagens/Bmw_0.jpg",
+      "/imagens/Bmw_1.png",
+      "/imagens/Bmw_2.png",
+      "/imagens/Bmw_3.png"
     ]
   },
   {
     id: 5,
     nome: "Porsche 911 GT3 RS",
-    potencia: "518 CV",
+    potencia: ["518 CV", "550 CV"],
     transmissao: "PDK dupla embreagem",
     motor: "4.0 L flat-6 aspirado",
-    aceleracao: "3,2 segundos",
+    aceleracao: ["3,2 segundos", "3,0 segundos"],
     tracao: "RWD",
-    preco: "$1.179 (R$ 5.900)",
+    preco: ["$1.179 (R$ 5.900)", "$1.300 (R$ 6.500)"],
     imagem: [
-        "/imagens/Pors_0.jpg",
-        "/imagens/Pors_1.png",
-        "/imagens/Pors_2.png",
-        "/imagens/Pors_3.png"
+      "/imagens/Pors_0.jpg",
+      "/imagens/Pors_1.png",
+      "/imagens/Pors_2.png",
+      "/imagens/Pors_3.png"
     ]
   },
   {
     id: 6,
     nome: "Range Rover Sport SV",
-    potencia: "635 PS",
+    potencia: ["635 PS", "680 PS"],
     transmissao: "Automática, 8 velocidades",
     motor: "4.4 L V8 twin-turbo MHEV",
-    aceleracao: "3,9 segundos",
+    aceleracao: ["3,9 segundos", "3,7 segundos"],
     tracao: "AWD",
-    preco: "$349 (R$ 1.745)",
+    preco: ["$349 (R$ 1.745)", "$400 (R$ 2.000)"],
     imagem: [
-        "/imagens/Land_0.jpg",
-        "/imagens/Land_1.png",
-        "/imagens/Land_2.png",  
-        "/imagens/Land_3.png"
+      "/imagens/Land_0.jpg",
+      "/imagens/Land_1.png",
+      "/imagens/Land_2.png",
+      "/imagens/Land_3.png"
     ]
   },
   {
     id: 7,
     nome: "Dodge RAM 3500",
-    potencia: "370–405 CV",
+    potencia: ["370–405 CV", "430 CV"],
     transmissao: "Automática, 8 marchas",
     motor: "V8 HEMI 6,4 L ou seis em linha diesel turbo",
-    aceleracao: "8–8,8 segundos",
+    aceleracao: ["8–8,8 segundos", "7,8–8,5 segundos"],
     tracao: "RWD / 4WD",
-    preco: "R$ 1.500",
+    preco: ["R$ 1.500", "R$ 1.700"],
     imagem: [
-        "/imagens/Ram_0.jpeg",
-        "/imagens/Ram_1.png",
-        "/imagens/Ram_2.png",
-        "/imagens/Ram_3.png"
+      "/imagens/Ram_0.jpeg",
+      "/imagens/Ram_1.png",
+      "/imagens/Ram_2.png",
+      "/imagens/Ram_3.png"
     ]
   },
   {
     id: 8,
     nome: "McLaren Senna",
-    potencia: "789 CV",
+    potencia: ["789 CV", "820 CV"],
     transmissao: "Automática DCT, 7 marchas",
     motor: "4.0 L V8 twin-turbo, dry-sump",
-    aceleracao: "2,8 segundos",
+    aceleracao: ["2,8 segundos", "2,7 segundos"],
     tracao: "RWD",
-    preco: "Preço sob consulta",
+    preco: ["Preço sob consulta", "Preço sob consulta"],
     imagem: [
-        "/imagens/Mc_0.jpeg",
-        "/imagens/Mc_1.png",
-        "/imagens/Mc_2.png",
-        "/imagens/Mc_3.png"
+      "/imagens/Mc_0.jpeg",
+      "/imagens/Mc_1.png",
+      "/imagens/Mc_2.png",
+      "/imagens/Mc_3.png"
     ]
   },
   {
     id: 9,
     nome: "Cadillac Escalade-V",
-    potencia: "692 CV",
+    potencia: ["692 CV", "730 CV"],
     transmissao: "Automática, 10 velocidades",
     motor: "6.2 L V8 supercharged",
-    aceleracao: "4,4 segundos",
+    aceleracao: ["4,4 segundos", "4,1 segundos"],
     tracao: "AWD",
-    preco: "$275 (R$ 1.375)",
+    preco: ["$275 (R$ 1.375)", "$320 (R$ 1.600)"],
     imagem: [
-        "/imagens/Cad_0.jpg",
-        "/imagens/Cad_1.png",
-        "/imagens/Cad_2.png",
-        "/imagens/Cad_3.png"
+      "/imagens/Cad_0.jpg",
+      "/imagens/Cad_1.png",
+      "/imagens/Cad_2.png",
+      "/imagens/Cad_3.png"
     ]
   }
 ];

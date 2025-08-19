@@ -7,7 +7,7 @@ import Header from "../componentes/Header.jsx";
 export default function Carros() {
   const { id } = useParams();
   const carro = carro_info.find((carro) => carro.id === parseInt(id));
-
+   
   if (!carro) {
     return <h1>Carro não encontrado</h1>
   }
@@ -26,16 +26,15 @@ export default function Carros() {
         {/* Lado direito - Configurações */}
         <div className="carro-config">
           <h2>{carro.nome}</h2>
-          <p>Etapa 1 de 4</p>
           <h3>Configuração de Motor</h3>
 
           <div className="opcao">
             <input type="radio" name="motor" defaultChecked /> 
             <div>
               <p><b>Opção 1</b></p>
-              <p>R$ 100,00</p>
-              <p>5,9 s — Aceleração 0-100 km/h</p>
-              <p>400 CV — Potência Máx</p>
+              <p>{carro.preco[0]}</p>
+              <p>0-100Km/H em {carro.aceleracao[0]}</p>
+              <p>{carro.potencia[0]}</p>
             </div>
           </div>
 
@@ -43,14 +42,14 @@ export default function Carros() {
             <input type="radio" name="motor" />
             <div>
               <p><b>Opção 2</b></p>
-              <p>R$ 150,00</p>
-              <p>4,5 s — Aceleração 0-100 km/h</p>
-              <p>440 CV — Potência Máx</p>
+              <p>{carro.preco[1]}</p>
+              <p>0-100Km/H em {carro.aceleracao[1]}</p>
+              <p>{carro.potencia[1]}</p>
             </div>
           </div>
 
           <div className="finalizacao">
-            <p>Preço Total: R$ 900,00</p>
+            <p>Preço Total: {carro.preco[1]}</p>
             <button>Finalizar</button>
           </div>
         </div>

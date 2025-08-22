@@ -14,8 +14,6 @@ export default function Main() {
           backgroundImage: "url('/imagens/imgfundo.png')",
           backgroundSize: "cover",
           width: "1530px",
-          marginLeft: "-10%",
-          marginTop: "-32px",
           position: "relative", 
         }}
       >

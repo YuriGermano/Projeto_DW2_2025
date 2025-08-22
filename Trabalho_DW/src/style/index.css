@@ -9,7 +9,6 @@ body{
     background-color: #2e2e2e;
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
-    margin-right: -13%;
 }
 
 /* Yuri */
@@ -21,7 +20,7 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    margin: 0px;
+
 }
 
 .navbar_carros{
@@ -57,6 +56,13 @@ body{
     z-index: 10;
 }
 
+#div_mae {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    gap: 5px;
+  }
+
  /* #div_mae {
   width: 100%;
   min-width: 100vw;
@@ -68,7 +74,6 @@ body{
 .logo img{
     width:150px;
     height: auto;
-    margin: 50px 0px 0px 30%;  
 }
 
 .logo_carros img{
@@ -171,20 +176,36 @@ a:hover{
     box-sizing: border-box;
 }
 
+
 .carros {
+    flex: 1 1 30%;    
+    max-width: 400px;
+    margin: 0;        
+    height: auto;     
+  }
+  
+
+/* .carros {
     height: 140vh;
     overflow-y: hidden;
     margin-top: 3.5%;
-}
+} */
 
-.grid_container{
+
+.grid_container {
+    display: block; 
+    margin: 0;
+    padding: 0;
+  }
+
+/* .grid_container{
     display: grid;
     width: max-content;
     margin-right: 100px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-}
+} */
 
 .carro{
     position: relative;
@@ -304,4 +325,3 @@ a:hover{
     margin-top: 16px;
     margin-left: -120px;
 } */
-

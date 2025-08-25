@@ -30,7 +30,6 @@ export default function Carros() {
 
         <div className="carro-config">
           <h2>{carro.nome}</h2>
-          <h3>Etapa 1 de 4</h3>
           <h3>Configuração de Motor</h3>  
 
           {carro.preco.map((preco, i) => (
